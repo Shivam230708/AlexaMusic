@@ -65,16 +65,16 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("Alexa_Help")
-                await self.one.join_chat("TheTeamAlexa")
-                await self.one.join_chat("Alexa_BotUpdates")
+                await self.one.join_chat("BotVerseRavi")
+                await self.one.join_chat("BotVerseRaviSupport")
+                await self.one.join_chat("ApnaxGroup")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
                     config.LOG_GROUP_ID,
-                    "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ, ɴᴏᴡ ɪᴛ's ᴛɪᴍᴇ ᴛᴏ ᴇɴᴊᴏʏ ᴍᴜsɪᴄ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏᴄʜᴀᴛs.",
+                    "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ",
                 )
             except:
                 LOGGER(__name__).error(
@@ -93,9 +93,9 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("Alexa_Help")
-                await self.two.join_chat("TheTeamAlexa")
-                await self.two.join_chat("Alexa_BotUpdates")
+                await self.one.join_chat("BotVerseRavi")
+                await self.one.join_chat("BotVerseRaviSupport")
+                await self.one.join_chat("ApnaxGroup")
             except:
                 pass
             assistants.append(2)
